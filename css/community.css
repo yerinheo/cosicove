@@ -1,0 +1,287 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url('https://webfontworld.github.io/NanumSquare/NanumSquare.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul,ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'SUITE', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1450px;
+}
+
+/*header*/
+#header_box{
+    position: relative;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.logo{
+    position: absolute;
+    left: 255px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gnb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gnb li{
+    padding:  47px 40px;
+}
+.gnb li a{
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 123.5px;
+}
+.search{
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+}
+.login li{
+    padding-left: 30px;
+}
+.login li:first-child{
+    display: flex;
+}
+
+/*commu*/
+#commu{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 220px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #000;
+}
+#commu h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-bottom: 100px;
+}
+.no_re{
+    display: flex;
+    justify-content: space-around;
+}
+.no_re .review{
+    border: 1px solid #000;
+    padding: 11px 0;
+    width: 180px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 24px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+.no_re .notice{
+    color: white;
+    padding: 11px 0;
+    width: 180px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 24px;
+    background-color: #98AA89;
+}
+.no_re .review:hover{
+    color: white;
+    background-color: #98AA89;
+    border: none;
+    border: 1px solid #98AA89;
+}
+
+
+/*news*/
+#news{
+    width: 1320px;
+    margin: 0 auto;
+}
+.news_notice{
+    display: flex;
+    margin: 50px 0;
+    padding: 25px 50px;
+    border: 1px solid #000;
+    align-items: center;
+}
+.news_notice p{
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 50px;
+    line-height: 29px;
+}
+
+/*notice*/
+#notice{
+    width: 1320px;
+    margin: 0 auto;
+}
+#notice table{
+    width: 1320px;
+    border-collapse: collapse;
+}
+#notice .bg{
+    background-color: #EDF3E8;
+    border-bottom: 1px solid #000;
+}
+#notice .bg th{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 18px 0;
+}
+#notice .number{
+    width: 148px;
+    font-size: 16px;
+    color: #777777;
+    text-align: center;
+}
+#notice td{
+    font-size: 16px;
+    padding: 18px 0;
+    font-weight: 500;
+}
+#notice .cosicove{
+    text-align: center;
+}
+#notice .views{
+    color: #777777;
+    text-align: center;
+}
+#notice .title{
+    display: flex;
+    align-items: center;
+}
+#notice .bg2{
+    border-bottom: 1px solid #000;
+}
+#notice .bg2:hover td{
+    background-color: #98AA89;
+    color: white;
+}
+#notice .bg2:hover .newhover{
+    opacity: 1;
+}
+.title .new{
+    position: relative;
+    height: 20px;
+}
+.title .new .newimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.title .new .newhover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+/*next*/
+#next{
+    display: flex;
+    width: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+/*footer*/
+#footer{
+    background-color: #3B3B3B;
+    padding: 50px 0;
+    margin-top: 250px;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 70px;
+}
+.left h3{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'NanumSquare';
+}
+.left h2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-family: 'NanumSquare';
+}
+.left p{
+    color: #ccc;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+}
+.left_dl{
+    display: flex;
+}
+.left_dl dt{
+    padding-right: 10px;
+    font-size: 16px;
+    color: #ccc;
+    font-family: 'NanumSquare';
+}
+.left_dl dd{
+    font-size: 16px;
+    color: #ccc;
+    font-family: 'NanumSquare';
+}
+.customer{
+    padding-right: 50px;
+}
+.left_img a{
+    padding-right: 15px;
+}
+.right{
+    text-align: end;
+}
+.right img{
+    padding-bottom: 40px;
+}
+.right p{
+    color: #ccc;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'NanumSquare';
+}
+.right span{
+    color: #707070;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+}

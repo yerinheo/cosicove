@@ -1,0 +1,315 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url('https://webfontworld.github.io/NanumSquare/NanumSquare.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul,ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'SUITE', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1450px;
+}
+
+/*header*/
+#header_box{
+    position: relative;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    transition: all 0.5s; 
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.logo{
+    position: absolute;
+    left: 255px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gnb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gnb li{
+    padding:  47px 40px;
+}
+.gnb li a{
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 123.5px;
+}
+.search{
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+}
+.login li{
+    padding-left: 30px;
+}
+.login li:first-child{
+    display: flex;
+}
+
+/*sub_banner*/
+#sub_banner{
+    background-image: url(../images/sub_deco.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+#sub_banner h1{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    padding-top: 310px;
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/*category*/
+#category{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+.category_ul{
+    display: flex;
+    justify-content: space-around;
+}
+.category_ul img{
+    border-radius: 200px;
+}
+.category_ul p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*sofa*/
+#homedeco{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.best_homedeco{
+    position: relative;
+}
+.best_homedeco p{
+    padding: 30px 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+.best_homedeco h5{
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.best_homedeco h5 span{
+    color: #E20D0D;
+}
+.best_bed .star{
+    text-align: right;
+    padding-top: 20px;
+}
+.recommend{
+    background-color: #EDF3E8;
+    padding: 13.5px 37.5px;
+    border-radius: 30px;
+    position: absolute;
+    top: -25px;
+    left: -50px;
+    animation: up_and_down 2s infinite;
+}
+.recommend h3{
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+}
+@keyframes up_and_down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.product1{
+    display: flex;
+    justify-content: space-between;
+    width: 749px;
+    padding-bottom: 100px;
+}
+.product1 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.product1 h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.product1 h5 span{
+    color: #E20D0D;
+}
+.product1 .star{
+    text-align: right;
+    padding-top: 20px; 
+}
+.product2{
+    display: flex;
+    justify-content: space-between;
+    width: 749px;
+}
+.product2 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.product2 h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.product2 h5 span{
+    color: #E20D0D;
+}
+.product2 .star{
+    text-align: right;
+    padding-top: 20px; 
+}
+.product1 li:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.product1 .product_img img{
+    transition: all 0.5s;
+}
+.product2 li:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.product2 .product_img img{
+    transition: all 0.5s;
+}
+.product_img{
+    overflow: hidden;
+}
+.best_homedeco:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.best_homedeco .product_img img{
+    transition: all 0.5s;
+}
+
+/*next*/
+#next{
+    display: flex;
+    width: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+/*footer*/
+#footer{
+    background-color: #3B3B3B;
+    padding: 50px 0;
+    margin-top: 250px;
+}
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 70px;
+}
+.left h3{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'NanumSquare';
+}
+.left h2{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    font-family: 'NanumSquare';
+}
+.left p{
+    color: #ccc;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+}
+.left_dl{
+    display: flex;
+}
+.left_dl dt{
+    padding-right: 10px;
+    font-size: 16px;
+    color: #ccc;
+    font-family: 'NanumSquare';
+}
+.left_dl dd{
+    font-size: 16px;
+    color: #ccc;
+    font-family: 'NanumSquare';
+}
+.customer{
+    padding-right: 50px;
+}
+.left_img a{
+    padding-right: 15px;
+}
+.right{
+    text-align: end;
+}
+.right img{
+    padding-bottom: 40px;
+}
+.right p{
+    color: #ccc;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'NanumSquare';
+}
+.right span{
+    color: #707070;
+    font-size: 16px;
+    font-family: 'NanumSquare';
+}

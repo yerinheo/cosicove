@@ -1,0 +1,159 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:100,400);
+@import url('https://webfontworld.github.io/NanumSquare/NanumSquare.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+ul,ol{
+    list-style: none;
+}
+img, video, iframe{
+    vertical-align: middle;
+}
+body{
+    font-family: 'SUITE', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1450px;
+}
+
+/*header*/
+#header_box{
+    position: relative;
+}
+#header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+.logo{
+    position: absolute;
+    left: 255px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.gnb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.gnb li{
+    padding:  47px 40px;
+}
+.gnb li a{
+    font-size: 20px;
+}
+.login{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 123.5px;
+}
+.search{
+    outline-style: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+}
+.login li{
+    padding-left: 30px;
+}
+.login li:first-child{
+    display: flex;
+}
+
+
+/*event*/
+#event_pag h1{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+/*promotion*/
+#promotion{
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+#promotion h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
+#promotion img{
+    padding-top: 50px;
+}
+#promotion h3{
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#promotion p{
+    font-size: 18px;
+    color: #656565;
+    font-weight: 500;
+}
+
+/*green*/
+#green{
+    background-color: #EDF3E8;
+}
+.green_inner{
+    width: 1320px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.green_inner h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+    text-align: right;
+}
+.imgs{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.imgs h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.imgs p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #656565;
+}
+.imgs img{
+    border-radius: 50px;
+}
+
+/*event*/
+#event {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+#event h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000;
+}
