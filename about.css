@@ -33,6 +33,7 @@ body{
     left: 0;
     z-index: 99;
     width: 100%;
+    transition: all 0.5s;
     border-bottom: 1px solid #000;
 }
 .header_inner{
@@ -76,125 +77,138 @@ body{
     display: flex;
 }
 
-
-/*event*/
-#event_pag h1{
-    text-align: center;
-    font-size: 70px;
-    font-weight: bold;
-    line-height: 70px;
+/*about*/
+#about{
+    width: 1320px;
+    margin: 0 auto;
     padding-top: 220px;
-    padding-bottom: 100px;
 }
-
-/*promotion*/
-#promotion{
-    width: 1320px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
-#promotion h2{
-    font-size: 30px;
+#about h1{
+    text-align: center;
     font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
+    font-size: 70px;
+    line-height: 70px;
 }
-.pro_img{
-    margin-top: 50px;
-}
-#promotion h3{
-    padding-top: 50px;
-    font-size: 30px;
-    font-weight: 600;
-    padding-bottom: 10px;
-}
-#promotion p{
-    font-size: 18px;
-    color: #656565;
-    font-weight: 500;
-}
-#promotion .pro_img:hover img{
-    transform: scale(1.1, 1.1);
-}
-#promotion .pro_img img{
-    transition: all 0.5s;
-}
-#promotion .pro_img{
-    overflow: hidden;
-    border-radius: 100% 100% 0 0;
-}
-
-/*green*/
-#green{
-    background-color: #EDF3E8;
-}
-.green_inner{
-    width: 1320px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-.green_inner h2{
-    font-size: 30px;
+#about h3{
+    text-align: center;
     font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
-    text-align: right;
+    font-size: 30px;
+    margin: 100px 0;
 }
-.imgs{
-    padding-top: 50px;
+.brand_story1{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
 }
-.imgs h3{
+.story_text1{
+    width: 550px;
+    text-align: center;
     font-size: 24px;
-    font-weight: 600;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    line-height: 40px;
 }
-.imgs p{
-    font-size: 18px;
-    font-weight: 500;
-    color: #656565;
+.story_img1{
+    border-radius: 100px 0 0 100px;
+    overflow: hidden;
 }
-.imgs li img{
-    border-radius: 50px;
-    transition: all 0.5s;
-}
-.imgs li a:hover img{
-    transform: scale(1.1, 1.1);
-}
-.next{
+.brand_story2{
     display: flex;
-    width: 110px;
-    margin: 0 auto;
     justify-content: space-between;
-    padding-top: 100px;
+    align-items: center; 
+}
+.story_text2{
+    width: 550px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.story_img2{
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
 }
 
-/*event*/
-#event {
+/*brand_st*/
+#brand_st{
     width: 1320px;
     margin: 0 auto;
     padding-top: 250px;
 }
-#event h2{
+#brand_st h3{
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
 }
-#event ul{
+.strength_img{
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
+}
+.strength_img img{
+    border-radius: 200px;
+}
+.strength_img h5{
+    font-size: 20px;
+    font-weight: bold;
     padding-top: 50px;
+    padding-bottom: 10px;
+    text-align: center;
 }
-#event ul li img{
-    border-radius: 30px;
+.strength_img p{
+    font-size: 18px;
+    text-align: center;
 }
-#event ul li p{
-    font-size: 16px;
-    padding-top: 15px;
-    font-weight: 500;
+
+/*brand_logo*/
+#brand_logo{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+#brand_logo h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo_h5{
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+    padding-top: 100px;
+}
+.logo_explain{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.logo_explain p{
+    padding-top: 50px;
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.color_h5{
+    text-align: end;
+    font-size: 22px;
+    font-weight: 400;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+.logo_color{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.black, .yellow {
+    display: flex;
+    justify-content: space-between;
+    width: 495px;
+    align-items: center;
+}
+.black p, .yellow p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 /*footer*/

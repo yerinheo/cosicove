@@ -33,7 +33,8 @@ body{
     left: 0;
     z-index: 99;
     width: 100%;
-    border-bottom: 1px solid #000;
+    transition: all 0.5s; 
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .header_inner{
     position: relative;
@@ -76,125 +77,179 @@ body{
     display: flex;
 }
 
-
-/*event*/
-#event_pag h1{
-    text-align: center;
+/*sub_banner*/
+#sub_banner{
+    background-image: url(../images/sub_sofa.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+#sub_banner h1{
+    color: white;
+    font-weight: bold;
     font-size: 70px;
-    font-weight: bold;
-    line-height: 70px;
-    padding-top: 220px;
-    padding-bottom: 100px;
-}
-
-/*promotion*/
-#promotion{
-    width: 1320px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
-#promotion h2{
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
-}
-.pro_img{
-    margin-top: 50px;
-}
-#promotion h3{
-    padding-top: 50px;
-    font-size: 30px;
-    font-weight: 600;
-    padding-bottom: 10px;
-}
-#promotion p{
-    font-size: 18px;
-    color: #656565;
-    font-weight: 500;
-}
-#promotion .pro_img:hover img{
-    transform: scale(1.1, 1.1);
-}
-#promotion .pro_img img{
-    transition: all 0.5s;
-}
-#promotion .pro_img{
-    overflow: hidden;
-    border-radius: 100% 100% 0 0;
-}
-
-/*green*/
-#green{
-    background-color: #EDF3E8;
-}
-.green_inner{
-    width: 1320px;
-    margin: 0 auto;
-    padding: 100px 0;
-}
-.green_inner h2{
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
+    padding-top: 310px;
     text-align: right;
-}
-.imgs{
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-between;
-}
-.imgs h3{
-    font-size: 24px;
-    font-weight: 600;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-.imgs p{
-    font-size: 18px;
-    font-weight: 500;
-    color: #656565;
-}
-.imgs li img{
-    border-radius: 50px;
-    transition: all 0.5s;
-}
-.imgs li a:hover img{
-    transform: scale(1.1, 1.1);
-}
-.next{
-    display: flex;
-    width: 110px;
+    width: 1320px;
     margin: 0 auto;
-    justify-content: space-between;
-    padding-top: 100px;
 }
 
-/*event*/
-#event {
+/*category*/
+#category{
     width: 1320px;
     margin: 0 auto;
     padding-top: 250px;
 }
-#event h2{
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #000;
+.category_ul{
+    display: flex;
+    justify-content: space-around;
 }
-#event ul{
+.category_ul img{
+    border-radius: 200px;
+    opacity: 0.6;
+}
+.category_ul p{
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.category_ul .on img{
+    opacity: 1;
+}
+
+
+/*sofa*/
+#sofa{
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 250px;
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
+    align-items: center;
+    padding-bottom: 100px;
 }
-#event ul li img{
-    border-radius: 30px;
+.best_sofa{
+    position: relative;
 }
-#event ul li p{
-    font-size: 16px;
-    padding-top: 15px;
+.best_sofa p{
+    padding: 30px 0;
+    font-size: 22px;
     font-weight: 500;
+}
+.best_sofa h5{
+    font-weight: 600;
+    font-size: 26px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.best_sofa h5 span{
+    color: #E20D0D;
+}
+.best_sofa .star{
+    text-align: right;
+    padding-top: 20px;
+}
+.recommend{
+    background-color: #EDF3E8;
+    padding: 13.5px 37.5px;
+    border-radius: 30px;
+    position: absolute;
+    top: -25px;
+    right: -50px;
+    animation: up_and_down 2s infinite;
+}
+.recommend h3{
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+}
+@keyframes up_and_down{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+.product1{
+    display: flex;
+    justify-content: space-between;
+    width: 749px;
+    padding-bottom: 100px;
+}
+.product1 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.product1 h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.product1 h5 span{
+    color: #E20D0D;
+}
+.product1 .star{
+    text-align: right;
+    padding-top: 20px; 
+}
+.product2{
+    display: flex;
+    justify-content: space-between;
+    width: 749px;
+}
+.product2 p{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 30px 0;
+}
+.product2 h5{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.product2 h5 span{
+    color: #E20D0D;
+}
+.product2 .star{
+    text-align: right;
+    padding-top: 20px; 
+}
+.product1 li:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.product1 .product_img img{
+    transition: all 0.5s;
+}
+.product2 li:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.product2 .product_img img{
+    transition: all 0.5s;
+}
+.product_img{
+    overflow: hidden;
+}
+.best_sofa:hover .product_img img{
+    transform: scale(1.1, 1.1);
+}
+.best_sofa .product_img img{
+    transition: all 0.5s;
+}
+
+/*next*/
+#next{
+    display: flex;
+    width: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 /*footer*/

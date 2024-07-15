@@ -6,13 +6,16 @@
     <title>CosiCove</title>
     <!--Suit 폰트-->
     <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUITE/fonts/static/woff2/SUITE.css" rel="stylesheet">
+    <!--aos css-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--css-->
     <link rel="stylesheet" href="./css/event.css">
 </head>
 <body>
     <div id="header_box">
         <div id="header">
-            <div class="logo">
+            <div class="header_inner">
+                <div class="logo">
                 <a href="index.html"><img src="./images/logo.png" alt="로고"></a>
             </div>
             <ul class="gnb">
@@ -21,6 +24,7 @@
                 <li><a href="community.html">COMMUNITY</a></li>
                 <li><a href="event.html">EVENT</a></li>
             </ul>
+            </div><!--header_inner-->
             <ul class="login">
                 <li>
                     <input type="search" class="search">
@@ -40,38 +44,55 @@
     </div><!--event-->
     <div id="promotion">
         <h2>이달의 기획전</h2>
-        <a href="#none"><img src="./images/promotion.png" alt="이달의 기획전"></a>
+        <div class="pro_img">
+            <a href="#none"><img src="./images/promotion.jpg" alt="이달의 기획전"></a>
+        </div>
         <h3>다가올 여름을 위한 라탄 가구, 신상 출시</h3>
         <p>24.06.01 ~ 24.06.30</p>
     </div><!--promotion-->
-    <div id="green">
+    <div id="green" data-aos="fade-up" data-aos-duration="1500">
         <div class="green_inner">
             <h2>기획전</h2>
                 <ul class="imgs">
                     <li>
-                        <img src="./images/promotion1.jpg" alt="힐링공간">
+                        <a href="#none">
+                            <img src="./images/promotion1.jpg" alt="힐링공간">
+                        </a>
                         <h3>나만의 힐링 공간</h3>
                         <p>힐링 공간이 주는 편안함</p>
                     </li>
                     <li>
-                        <img src="./images/promotion2.jpg" alt="화이트룸">
+                        <a href="#none">
+                            <img src="./images/promotion2.jpg" alt="화이트룸">
+                        </a>
                         <h3>깔끔한 화이트 룸</h3>
                         <p>깔끔하고 세련된 느낌을 주는 흰색 가구</p>
                     </li>
                     <li>
-                        <img src="./images/promotion3.jpg" alt="완벽한 편안함">
+                        <a href="#none">
+                            <img src="./images/promotion3.jpg" alt="완벽한 편안함">
+                        </a>
                         <h3>완벽한 편안함</h3>
                         <p>완벽한 편안함을 느낄 수 있는 패브릭 소파</p>
                     </li>
                     <li>
-                        <img src="./images/promotion4.jpg" alt="미니멀 라이프">
+                        <a href="#none">
+                            <img src="./images/promotion4.jpg" alt="미니멀 라이프">
+                        </a>
                         <h3>나의 홈, 미니멀 라이프</h3>
                         <p>오직 나에게 필요한 것들만!</p>
                     </li>
                 </ul>
+                <div class="next">
+                    <a href="#none"><img src="./images/pag1.png" alt="1페이지"></a>
+                    <a href="#none"><img src="./images/pag2.png" alt="2페이지"></a>
+                    <a href="#none"><img src="./images/pag2.png" alt="2페이지"></a>
+                    <a href="#none"><img src="./images/pag2.png" alt="2페이지"></a>
+                    <a href="#none"><img src="./images/pag2.png" alt="2페이지"></a>
+                </div><!--next-->
         </div><!--green_inner-->
     </div><!--green-->
-    <div id="event">
+    <div id="event" data-aos="fade-up" data-aos-duration="1500">
         <h2>이벤트</h2>
         <ul>
             <li>
@@ -141,3 +162,10 @@
             </div><!--right-->
         </div><!--footer_inner-->
     </div><!--footer-->
+
+    <!--aos js-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--aos-->
+    <script>AOS.init();</script>
+</body>
+</html>
