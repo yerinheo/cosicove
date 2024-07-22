@@ -36,9 +36,14 @@ body{
     transition: all 0.5s; 
     background-color: rgba(255, 255, 255, 0.5);
 }
+.header_inner{
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+}
 .logo{
     position: absolute;
-    left: 255px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -100,6 +105,7 @@ body{
 }
 .category_ul img{
     border-radius: 200px;
+    opacity: 0.6;
 }
 .category_ul p{
     padding-top: 20px;
@@ -107,7 +113,9 @@ body{
     font-weight: 600;
     text-align: center;
 }
-
+.category_ul .on img{
+    opacity: 1;
+}
 /*sofa*/
 #bed{
     width: 1320px;

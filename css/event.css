@@ -35,9 +35,14 @@ body{
     width: 100%;
     border-bottom: 1px solid #000;
 }
+.header_inner{
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+}
 .logo{
     position: absolute;
-    left: 255px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -94,8 +99,8 @@ body{
     padding-bottom: 50px;
     border-bottom: 1px solid #000;
 }
-#promotion img{
-    padding-top: 50px;
+.pro_img{
+    margin-top: 50px;
 }
 #promotion h3{
     padding-top: 50px;
@@ -107,6 +112,16 @@ body{
     font-size: 18px;
     color: #656565;
     font-weight: 500;
+}
+#promotion .pro_img:hover img{
+    transform: scale(1.1, 1.1);
+}
+#promotion .pro_img img{
+    transition: all 0.5s;
+}
+#promotion .pro_img{
+    overflow: hidden;
+    border-radius: 100% 100% 0 0;
 }
 
 /*green*/
@@ -141,8 +156,19 @@ body{
     font-weight: 500;
     color: #656565;
 }
-.imgs img{
+.imgs li img{
     border-radius: 50px;
+    transition: all 0.5s;
+}
+.imgs li a:hover img{
+    transform: scale(1.1, 1.1);
+}
+.next{
+    display: flex;
+    width: 110px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 100px;
 }
 
 /*event*/

@@ -36,9 +36,14 @@ body{
     transition: all 0.5s;
     border-bottom: 1px solid #000;
 }
+.header_inner{
+    position: relative;
+    width: 1320px;
+    margin: 0 auto;
+}
 .logo{
     position: absolute;
-    left: 255px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
 }
